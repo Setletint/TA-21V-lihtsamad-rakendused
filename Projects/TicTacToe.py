@@ -1,56 +1,24 @@
-print(". . .")
-print(". . .")
-print(". . .")
+from array import array
+from ast import Call
 
-next_pos_upd = input("Type here you want to set your figure: ")
-if(next_pos_upd == "1"):
-    print("x . .")
-    print(". . .")
-    print(". . .")
-    next_wgt_upd = input("Type which row: ")
-    if(next_wgt_upd == "1"):
-        print("x . .")
-        print(". . .")
-        print(". . .")
-    if(next_wgt_upd == "2"):
-        print(". . .")
-        print("x . .")
-        print(". . .")
-    if(next_wgt_upd == "3"):
-        print(". . .")
-        print(". . .")
-        print("x . .")
-elif(next_pos_upd == "2"):
-    print(". x .")
-    print(". . .")
-    print(". . .")
-    next_wgt_upd = input("Type which row: ")
-    if(next_wgt_upd == "1"):
-        print(". x .")
-        print(". . .")
-        print(". . .")
-    if(next_wgt_upd == "2"):
-        print(". . .")
-        print(". x .")
-        print(". . .")
-    if(next_wgt_upd == "3"):
-        print(". . .")
-        print(". . .")
-        print(". x .")
-elif(next_pos_upd == "3"):
-    print(". . x")
-    print(". . .")
-    print(". . .")
-    next_wgt_upd = input("Type which row: ")
-    if(next_wgt_upd == "1"):
-        print(". . x")
-        print(". . .")
-        print(". . .")
-    if(next_wgt_upd == "2"):
-        print(". . .")
-        print(". . x")
-        print(". . .")
-    if(next_wgt_upd == "3"):
-        print(". . .")
-        print(". . .")
-        print(". . x")
+
+gameboard = [
+  ".",".",".",
+  ".",".",".",
+  ".",".","."
+  ]
+
+def CallGame():
+  print(gameboard[0], gameboard[1], gameboard[2])
+  print(gameboard[3], gameboard[4], gameboard[5])
+  print(gameboard[6], gameboard[7], gameboard[8])
+CallGame()
+
+mark_pos = int(input("Choose position: "))
+
+if(mark_pos == 1):
+  gameboard[0] = "X"
+  CallGame()
+if(mark_pos == 2):
+  gameboard[1] = "X"
+  CallGame()
