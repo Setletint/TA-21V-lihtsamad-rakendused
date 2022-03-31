@@ -1,17 +1,18 @@
+
 map = [
-    [2, 0, 1, 0, 1],
+    [12, 0, 1, 0, 1],
     [1, 0, 1, 0, 1],
     [1, 0, 1, 1, 0],
     [1, 1, 1, 0, 0],
-    [0, 0, 1, 1, 3]
+    [0, 0, 1, 1, 24]
 ]
 
-start_pos_x = 0
 start_pos_y = 0
+start_pos_x = 0
 finish_pos = 0
 
-if map[0][1] == 1:
-    print("You can go right.")
+y_rows = 5
+x_rows = 5
 
-if map[1][0] == 1:
-    print("You can go bottom")
+def get_next_pos(current_position_x, current_position_y):
+    
