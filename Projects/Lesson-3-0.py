@@ -7,10 +7,10 @@ WALL_P = 0
 
 map = [
     [START_P, ROAD_I, ROAD_I, ROAD_I, ROAD_I],
-    [WALL_P, WALL_P, WALL_P, WALL_P, ROAD_I],
-    [WALL_P, WALL_P, WALL_P, WALL_P, ROAD_I],
-    [WALL_P, WALL_P, WALL_P, WALL_P, ROAD_I],
-    [WALL_P, WALL_P, WALL_P, WALL_P, FINISH_P]
+    [WALL_P, ROAD_I, WALL_P, WALL_P, ROAD_I],
+    [WALL_P, ROAD_I, WALL_P, WALL_P, ROAD_I],
+    [WALL_P, ROAD_I, WALL_P, WALL_P, ROAD_I],
+    [WALL_P, ROAD_I, ROAD_I, FINISH_P, FINISH_P]
 ]
 
 start_pos_y = 0
