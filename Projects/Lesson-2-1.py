@@ -2,9 +2,9 @@ import random
 
 
 map = [
-    [12, 0, 1, 0, 1],
+    [12, 0, 0, 0, 1],
     [1, 1, 1, 0, 1],
-    [0, 0, 1, 1, 0],
+    [0, 1, 1, 1, 0],
     [1, 0, 1, 0, 0],
     [1, 1, 1, 1, 1]
 ]
@@ -18,7 +18,7 @@ x_rows = 5
 
 
 def get_next_pos(current_pos_y, current_pos_x):
-    if current_pos_y == 3 and current_pos_x == 0:
+    if current_pos_y == 4 and current_pos_x == 4:
         print("End")
         quit()
     random_number = random.random()
