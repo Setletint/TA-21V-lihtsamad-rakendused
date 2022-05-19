@@ -43,7 +43,7 @@ with mp_hands.Hands(
 
     color = (255, 0, 0)
 
-
+    cv2.circle(image, (180,180), 10, 45)
 
 
     cv2.circle(image, (left_hand_x, left_hand_y), 10, color, 2)
